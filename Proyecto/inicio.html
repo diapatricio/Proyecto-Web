@@ -1,0 +1,46 @@
+
+<!Doctype html>
+<html>
+<head>
+<title>Efecto en imagenes con css3</title>
+<style type="text/css">
+body{
+background-color: #FFFFFF;
+}
+ul{
+width: 820px;
+margin:0 auto;
+margin-top: 100px;
+margin-down: 200px;
+}
+ul li{
+list-style: none;
+}
+ul li img{
+background-size: cover;
+border-radius: 6px;
+float: left;
+margin-right: 50px;
+margin-top: 40px;
+opacity: .6;
+width: 360px;
+height: 260px;
+-webkit-transition:all .6s ease;
+}
+ul li img:hover{
+opacity: 1;
+border-radius: 20px;
+-webkit-transform:scale(1.25) rotate(360deg);
+box-shadow: 0px 0px 20px #ddd;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="http://www.fca.unam.mx/"> <img src="uno.jpg"> <a></li>
+<li><img src="dos.jpg"></li>
+<li><img src="tres.jpg"></li>
+<li><img src="cuatro.jpg"></li>
+</ul>
+</body>
+</html>
