@@ -4,8 +4,8 @@ include "../conexion.php";
 $re=mysql_query("select * from usuarios where usuario='".$_POST['usuario']."' AND 
  					Password='".$_POST['password']."'")	or die(mysql_error());
 	while ($f=mysql_fetch_array($re)) {
-		$arreglo[]=array('nombre'=>$f['Nombre'],
-			'apellido'=>$f['apellido'],'imagen'=>$f['Imagen']);
+		$arreglo[]=array('nombre'=>$f['nombre'],
+			'apellido'=>$f['apellido'],'imagen'=>$f['imagen']);
 	}
 	if(isset($arreglo)){
 		$_SESSION['usuario']=$arreglo;
